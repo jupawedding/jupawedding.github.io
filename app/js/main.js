@@ -1,6 +1,7 @@
 var line_animation = document.getElementById("line-container");
 var arrow = document.getElementById("arrow");
 
+$date = $(".date"); 
 $bod = $("body"); 
 $win = $(window);
 $doc = $(document); 
@@ -87,6 +88,7 @@ $doc.on("mousemove", function() {
 });
 
 $(window).on('load', function() {
+	//$(".name-wrapper h1").removeClass("hide");
     setStage(); 
     $bod.addClass("loaded"); 
     setTimeout(function() {
@@ -100,6 +102,7 @@ line_animation.addEventListener("animationend", revealArrow, false);
 
 function revealArrow(){
 	arrow.classList.remove("hide");
+	$($date).removeClass("hide");
 }
 
 function setStage() {
