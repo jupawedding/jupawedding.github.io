@@ -1,3 +1,18 @@
+@keyframes line_animation {
+  from {
+    left: 50%;
+    width: 0%; }
+  to {
+    left: -1%;
+    width: 100%; } 
+}
+
+@keyframes opacity_animation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 body {
   position: relative;
   overflow: hidden;
@@ -23,7 +38,7 @@ body {
 }
 
 #intro {
-  width: 99%;
+  width: calc(100vw - 20px);
   position: relative;
   min-height: 100vh;
   margin-bottom: 600vh;
@@ -81,6 +96,21 @@ h1 {
   color: #222; 
   font-size: 2em;
   font-family: 'Cormorant Garamond', serif;
+
+  animation: opacity_animation 5s forwards; 
+}
+
+h2{
+  color: #222; 
+  font-size: 1.5em;
+  line-height: 1.15151515;
+  font-family: 'Cormorant Garamond', serif;
+  border-bottom: 2px solid rgb(199, 115, 74);
+
+}
+
+p{
+	font-size: 100%;
 }
 
 .date{
@@ -95,18 +125,12 @@ h1 {
 }
 
 .pull-left {
-  float: left; }
+  float: left; 
+}
 
 .pull-right {
-  float: right; }
-
-@keyframes line_animation {
-  from {
-    left: 50%;
-    width: 0%; }
-  to {
-    left: -1%;
-    width: 100%; } }
+  float: right; 
+}
 
 .line-container {
   width: 0%;
@@ -134,7 +158,8 @@ h1 {
   transform: translateX(-50%);
   -webkit-transition: opacity 0.5s cubic-bezier(0.28, 0, 0.18, 1);
   -moz-transition: opacity 0.5s cubic-bezier(0.28, 0, 0.18, 1);
-  transition: opacity 0.5s cubic-bezier(0.28, 0, 0.18, 1); }
+  transition: opacity 0.5s cubic-bezier(0.28, 0, 0.18, 1); 
+}
 
 .hide {
   opacity: 0; 
@@ -176,4 +201,12 @@ h1 {
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-color: rgb(199, 115, 74);
+}
+
+.about-wrapper{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40vw;
+    right: 149px;
 }

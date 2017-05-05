@@ -1,3 +1,17 @@
+@keyframes line_animation {
+  from {
+    left: 50%;
+    width: 0%; }
+  to {
+    left: -1%;
+    width: 100%; } }
+
+@keyframes opacity_animation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 body {
   position: relative;
   overflow: hidden;
@@ -20,7 +34,7 @@ body {
   bottom: 0 !important; }
 
 #intro {
-  width: 99%;
+  width: calc(100vw - 20px);
   position: relative;
   min-height: 100vh;
   margin-bottom: 600vh;
@@ -74,7 +88,18 @@ section {
 h1 {
   color: #222;
   font-size: 2em;
-  font-family: 'Cormorant Garamond', serif; }
+  font-family: 'Cormorant Garamond', serif;
+  animation: opacity_animation 5s forwards; }
+
+h2 {
+  color: #222;
+  font-size: 1.5em;
+  line-height: 1.15151515;
+  font-family: 'Cormorant Garamond', serif;
+  border-bottom: 2px solid #c7734a; }
+
+p {
+  font-size: 100%; }
 
 .date {
   position: absolute;
@@ -90,14 +115,6 @@ h1 {
 
 .pull-right {
   float: right; }
-
-@keyframes line_animation {
-  from {
-    left: 50%;
-    width: 0%; }
-  to {
-    left: -1%;
-    width: 100%; } }
 
 .line-container {
   width: 0%;
@@ -161,3 +178,10 @@ h1 {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background-color: #c7734a; }
+
+.about-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40vw;
+  right: 149px; }

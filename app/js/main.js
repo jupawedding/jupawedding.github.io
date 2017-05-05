@@ -1,7 +1,15 @@
 var line_animation = document.getElementById("line-container");
-var arrow = document.getElementById("arrow");
+var $pa = document.getElementById("pa");
 
-$date = $(".date"); 
+var arrow = document.getElementById("arrow");
+var $ju = document.getElementById("ju");
+var $date = document.getElementById("date");
+
+
+
+
+
+
 $bod = $("body"); 
 $win = $(window);
 $doc = $(document); 
@@ -44,10 +52,10 @@ $doc.ready(function() {
 		$y = parseInt(this.y >> 0) * -1; 
 		//$y > 10 ? $("#intro .arrow").addClass("hide") : $("#intro .arrow").removeClass("hide");
 		$max = 1 + $y / 5e3;
-		console.log($max);
+		
 		$scale = Math.min(Math.max(parseFloat($max), 1), 2);
 		$scale < 1.25 && $first.find("img").css("transform", "scale(" + $scale + ")");
-		console.log($scale);
+		
 		$max = 200 - $y / $winH * 50; 
 		
 		$left = Math.min(Math.max(parseFloat($max), 50), 250);
@@ -84,11 +92,12 @@ $doc.on("mousemove", function() {
     clearTimeout($autoScroll2); 
     clearTimeout($autoScroll3);
     clearTimeout($autoScroll4);
-    console.log("in");
+   
 });
 
 $(window).on('load', function() {
-	//$(".name-wrapper h1").removeClass("hide");
+	$ju.classList.remove("hide");
+	//$pa.classList.remove("hide");
     setStage(); 
     $bod.addClass("loaded"); 
     setTimeout(function() {
@@ -99,10 +108,21 @@ $(window).on('load', function() {
 });
 
 line_animation.addEventListener("animationend", revealArrow, false);
+$ju.addEventListener("animationend", revealPa, false);
+///pa_animation.addEventListener("animationJuEnd", revealPa, false);
 
 function revealArrow(){
 	arrow.classList.remove("hide");
-	$($date).removeClass("hide");
+	$date.classList.remove("hide");
+}
+
+function revealJu(){
+	$ju.classList.remove("hide");
+}
+
+function revealPa(){
+	console.log("in");
+	//$pa.classList.remove("hide");
 }
 
 function setStage() {
