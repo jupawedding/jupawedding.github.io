@@ -96,7 +96,8 @@ h2 {
   font-size: 1.5em;
   line-height: 1.15151515;
   font-family: 'Cormorant Garamond', serif;
-  border-bottom: 2px solid #c7734a; }
+  border-bottom: 2px solid #c7734a;
+  padding-bottom: 0.45454545em; }
 
 p {
   font-size: 100%; }
