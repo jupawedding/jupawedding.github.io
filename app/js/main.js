@@ -63,7 +63,7 @@ $doc.ready(function() {
 		$offset = 200 - $y / $winH * 100 + 200;
 		$left2 = Math.min(Math.max(parseFloat($offset), 0), 100);
 		
-		$third.css("left", $left2 + "vw"); 
+		/*$third.css("left", $left2 + "vw"); 
 		$offset2 = 250 - $y / $winH * 100 + 300;
 		$left3 = Math.min(Math.max(parseFloat($offset2), 50), 250);
 		50 === $left3 ? $third.addClass("gray") : $third.removeClass("gray");
@@ -81,7 +81,7 @@ $doc.ready(function() {
             scroller.scrollTo(0, $(".scroller #intro").outerHeight(!0) * -1, 1e4, IScroll.utils.ease.quadratic)
         }, 8e3)) : clearTimeout($autoScroll3), $y >= $(".scroller").height() - $winH - .05 * $winW ? (clearTimeout($autoScroll4), $autoScroll4 = setTimeout(function() {
             scroller.scrollTo(0, 0, 6e3, IScroll.utils.ease.quadratic)
-        }, 12e3)) : clearTimeout($autoScroll4);
+        }, 12e3)) : clearTimeout($autoScroll4);*/
 
     });
 

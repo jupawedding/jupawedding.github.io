@@ -34,13 +34,14 @@ body {
   bottom: 0 !important; }
 
 #intro {
-  width: calc(100vw - 20px);
+  width: calc(100vw - 10px);
   position: relative;
   min-height: 100vh;
   margin-bottom: 600vh;
   z-index: 1000;
   background-color: #fff;
-  border: 10px solid #c7734a;
+  border-top: 10px solid #e5e72a;
+  border-bottom: 10px solid #e85b06;
   webkit-transform: translateY(0vh);
   -moz-transform: translateY(0vh);
   -ms-transform: translateY(0vh);
@@ -49,6 +50,22 @@ body {
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.28, 0, 0.18, 1) 0.7s;
   -moz-transition: -moz-transform 1s cubic-bezier(0.28, 0, 0.18, 1) 0.7s;
   transition: transform 1s cubic-bezier(0.28, 0, 0.18, 1) 0.7s; }
+  #intro:after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(0deg, #e85b06, #e5e72a);
+    top: -10px;
+    bottom: -10px;
+    width: 10px;
+    left: 0; }
+  #intro:before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(0deg, #e85b06, #e5e72a);
+    top: -10px;
+    bottom: -10px;
+    width: 10px;
+    right: -10px; }
 
 section {
   display: block; }
@@ -96,8 +113,9 @@ h2 {
   font-size: 1.5em;
   line-height: 1.15151515;
   font-family: 'Cormorant Garamond', serif;
-  border-bottom: 2px solid #c7734a;
-  padding-bottom: 0.45454545em; }
+  border-bottom: 2px solid #e5e72a;
+  padding-bottom: 0.45454545em;
+  margin-top: 0; }
 
 p {
   font-size: 100%; }
@@ -123,7 +141,7 @@ p {
   height: 0;
   position: absolute;
   top: 50%;
-  background-color: #c7734a;
+  background-image: linear-gradient(0deg, #e85b06, #e5e72a);
   border-top-width: 0px;
   animation: line_animation 3s linear forwards; }
 
@@ -131,7 +149,7 @@ p {
   display: block;
   text-align: center;
   max-width: 547px;
-  border-bottom: solid 2px #c7734a;
+  border-bottom: solid 2px #e5e72a;
   margin: 0px auto; }
 
 .arrow {
@@ -180,9 +198,38 @@ p {
   transform: translateX(-50%) translateY(-50%);
   background-color: #c7734a; }
 
+.three {
+  left: 100vw;
+  z-index: 1000 !important; }
+
 .about-wrapper {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 40vw;
   right: 149px; }
+
+.schedule-wrapper {
+  background-color: #fff;
+  height: 90vh;
+  width: 90vw;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.27272727em;
+  padding: 2.27272727em;
+  box-sizing: border-box; }
+
+.layout_wrapper {
+  display: flex;
+  flex-direction: row; }
+  .layout_wrapper div {
+    width: 50%;
+    text-align: center; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
