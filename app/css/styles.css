@@ -235,10 +235,26 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40vw;
-  right: 149px; }
+  width: 20vw;
+  right: 8%; }
   .about-wrapper p {
     font-size: 100%; }
+  @media (min-width: 1400px) {
+    .about-wrapper {
+      width: 30vw;
+      left: auto;
+      right: 6%; } }
+  @media (min-width: 1500px) {
+    .about-wrapper {
+      width: 35vw;
+      left: auto;
+      right: 5%; } }
+  @media (min-width: 1500px) {
+    .about-wrapper {
+      width: 40vw;
+      left: auto;
+      right: auto;
+      left: 50%; } }
 
 .schedule-wrapper {
   background-color: #fff;

@@ -1,3 +1,7 @@
+$breakpoint-tablet: 768px;
+$breakpoint-large: 1680px;
+
+
 @keyframes line_animation {
   from {
     left: 50%;
@@ -278,11 +282,29 @@ a{
 	position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40vw;
-    right: 149px;
+    width: 20vw;
+    right: 8%;
 
     p{
     	font-size: 100%;
+    }
+
+    @media (min-width: 1400px) {
+		width: 30vw;
+		left: auto;
+		right: 6%;
+    }
+
+    @media (min-width: 1500px) {
+		width: 35vw;
+		left: auto;
+		right: 5%;
+    }
+    @media (min-width: 1500px) {
+		width: 40vw;
+		left: auto;
+		right: auto;
+		left: 50%;
     }
 }
 
