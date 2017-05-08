@@ -113,7 +113,7 @@ h2 {
   font-size: 1.5em;
   line-height: 1.15151515;
   font-family: 'Cormorant Garamond', serif;
-  border-bottom: 2px solid #e5e72a;
+  border-bottom: 2px solid #0c9fe3;
   padding-bottom: 0.45454545em;
   margin-top: 0; }
 
@@ -149,7 +149,7 @@ p {
   display: block;
   text-align: center;
   max-width: 547px;
-  border-bottom: solid 2px #e5e72a;
+  border-bottom: solid 2px #0c9fe3;
   margin: 0px auto; }
 
 .arrow {
@@ -196,7 +196,7 @@ p {
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background-color: #c7734a; }
+  background-image: linear-gradient(0deg, #e85b06, #e5e72a); }
 
 .three {
   left: 100vw;
