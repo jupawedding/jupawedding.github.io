@@ -117,8 +117,25 @@ h2 {
   padding-bottom: 0.45454545em;
   margin-top: 0; }
 
+h3 {
+  font-size: 1em;
+  margin-top: 0;
+  padding: 0; }
+
+h4 {
+  font-size: 0.75em;
+  margin-bottom: 0;
+  padding: 0; }
+
 p {
-  font-size: 100%; }
+  font-size: 0.75em;
+  margin: 0; }
+
+li {
+  font-size: 0.75em; }
+
+a {
+  color: #222; }
 
 .date {
   position: absolute;
@@ -196,7 +213,8 @@ p {
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background-image: linear-gradient(0deg, #e85b06, #e5e72a); }
+  background-image: linear-gradient(0deg, #e85b06, #e5e72a);
+  z-index: 40000 !important; }
 
 .three {
   left: 100vw;
@@ -208,6 +226,8 @@ p {
   transform: translateY(-50%);
   width: 40vw;
   right: 149px; }
+  .about-wrapper p {
+    font-size: 100%; }
 
 .schedule-wrapper {
   background-color: #fff;
@@ -223,9 +243,10 @@ p {
 
 .layout_wrapper {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
   .layout_wrapper div {
-    width: 50%;
+    width: calc(34% - 50px);
     text-align: center; }
 
 ul {
