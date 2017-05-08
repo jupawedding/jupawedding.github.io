@@ -100,11 +100,6 @@ $(window).on('load', function() {
 	//$pa.classList.remove("hide");
     setStage(); 
     $bod.addClass("loaded"); 
-    setTimeout(function() {
-        $bod.addClass("hide-splash")
-    }, 2e3), document.hasFocus() ? $autoScroll = setTimeout(function() {
-        scroller.scrollTo(0, $(".scroller #intro").outerHeight(!0) * -1, 1e4, IScroll.utils.ease.quadratic)
-    }, 8e3) : $focus = !1
 });
 
 line_animation.addEventListener("animationend", revealArrow, false);
