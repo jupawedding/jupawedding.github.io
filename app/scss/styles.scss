@@ -45,7 +45,7 @@ body {
   width: calc(100vw - 10px);
   position: relative;
   min-height: 100vh;
-  margin-bottom: 600vh;
+  margin-bottom: 500vh;
   z-index: 1000;
   background-color: #fff;
   //border: 10px solid rgb(199, 115, 74);
@@ -304,7 +304,7 @@ a{
 
 .about-wrapper{
 	  position: absolute;
-    top: 80%;
+    bottom: 0;
     right: 50%;
     transform: translate(50%, 0);
     padding-top: 50px;
@@ -312,17 +312,20 @@ a{
     width: 90%;
     padding-left: 50px;
     padding-right: 50px;
-    padding: 50px 50px 0;
+    padding: 50px 50px 100px;
+
+
 
     p{
     	font-size: 100%;
     }
 
-    @media (min-width: 1040px) {
+    @media (min-width: 1200px) {
       padding: 0;
+      bottom: auto;
     }
 
-    @media (min-width: 1040px) {
+    @media (min-width: 1200px) {
   		width: 30vw;
   		left: auto;
   		right: 6%;

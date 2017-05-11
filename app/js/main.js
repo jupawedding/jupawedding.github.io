@@ -47,14 +47,14 @@ $doc.ready(function() {
 
 	scroller = new IScroll("#main", scrollSettings);
 	scroller.on('scroll', function() {
-		console.log("scroll");
+		
 		clearTimeout($autoScroll);
 		$y = parseInt(this.y >> 0) * -1; 
 		//$y > 10 ? $("#intro .arrow").addClass("hide") : $("#intro .arrow").removeClass("hide");
 		$max = 1 + $y / 5e3;
 		
 		$scale = Math.min(Math.max(parseFloat($max), 1), 2);
-		$scale < 1.25 && $first.find("img").css("transform", "scale(" + $scale + ")");
+		//$scale < 1.25 && $first.find("img").css("transform", "scale(" + $scale + ")");
 		
 		$max = 200 - $y / $winH * 50; 
 		
