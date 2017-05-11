@@ -249,13 +249,21 @@ a {
 
 .about-wrapper {
   position: absolute;
-  top: 85%;
-  width: 95vw;
+  top: 80%;
   right: 50%;
-  transform: translate(50%, 0); }
+  transform: translate(50%, 0);
+  padding-top: 50px;
+  background-color: #fff;
+  width: 90%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding: 50px 50px 0; }
   .about-wrapper p {
     font-size: 100%; }
-  @media (min-width: 1400px) {
+  @media (min-width: 1040px) {
+    .about-wrapper {
+      padding: 0; } }
+  @media (min-width: 1040px) {
     .about-wrapper {
       width: 30vw;
       left: auto;
