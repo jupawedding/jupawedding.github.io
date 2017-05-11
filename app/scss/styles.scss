@@ -45,7 +45,7 @@ body {
   width: calc(100vw - 10px);
   position: relative;
   min-height: 100vh;
-  margin-bottom: 500vh;
+  margin-bottom: 800vh;
   z-index: 1000;
   background-color: #fff;
   //border: 10px solid rgb(199, 115, 74);
@@ -302,6 +302,18 @@ a{
     z-index: 1000 !important;
 }
 
+.image-wrapper{
+  img{
+    width: 100%;
+    margin-top: -250px;
+
+    @media (min-width: 1280px) {
+      margin-top: 0;
+      width: auto;
+    }
+  }
+}
+
 .about-wrapper{
 	  position: absolute;
     bottom: 0;
@@ -309,28 +321,25 @@ a{
     transform: translate(50%, 0);
     padding-top: 50px;
     background-color: #fff;
-    width: 90%;
+    width: 100%;
     padding-left: 50px;
     padding-right: 50px;
     padding: 50px 50px 100px;
-
+    box-sizing: border-box;
 
 
     p{
     	font-size: 100%;
     }
 
-    @media (min-width: 1200px) {
-      padding: 0;
-      bottom: auto;
-    }
-
-    @media (min-width: 1200px) {
-  		width: 30vw;
+    @media (min-width: 1280px) {
+  		width: 35vw;
   		left: auto;
-  		right: 6%;
+  		right: 5%;
       top: 50%;
       transform: translate(0, -50%);
+      padding: 0;
+      bottom: auto;
     }
 
     @media (min-width: 1500px) {
