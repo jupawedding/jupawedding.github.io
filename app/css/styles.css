@@ -250,6 +250,9 @@ a {
 .image-wrapper img {
   width: 100%;
   margin-top: -250px; }
+  @media (min-width: 768px) {
+    .image-wrapper img {
+      width: auto; } }
   @media (min-width: 1280px) {
     .image-wrapper img {
       margin-top: 0;
@@ -267,6 +270,9 @@ a {
   padding-right: 50px;
   padding: 50px 50px 230px;
   box-sizing: border-box; }
+  @media (min-width: 520px) {
+    .about-wrapper {
+      padding: 50px 50px 70px; } }
   @media (min-width: 1280px) {
     .about-wrapper {
       width: 35vw;
@@ -276,17 +282,14 @@ a {
       transform: translate(0, -50%);
       padding: 0;
       bottom: auto; } }
-  @media (min-width: 1500px) {
+  @media (min-width: 1400px) {
     .about-wrapper {
       width: 35vw;
       left: auto;
       right: 5%; } }
   @media (min-width: 1500px) {
     .about-wrapper {
-      width: 40vw;
-      left: auto;
-      right: auto;
-      left: 55%; } }
+      width: 40vw; } }
 
 .schedule-wrapper {
   background-color: #fff;
