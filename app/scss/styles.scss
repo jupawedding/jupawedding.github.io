@@ -147,7 +147,7 @@ h2{
 }
 
 h3{
-	font-size: 1em;
+	font-size: 1.2em;
 	margin-top: 0;
 	padding: 0;
 
@@ -176,11 +176,11 @@ h4{
 }
 
 p{
-	font-size: .75em;
+	font-size: 1em;
 	margin: 0;
 
   @media (min-width: 1040px) {
-    //font-size: .75em;
+    font-size: .75em;
   }
 }
 
