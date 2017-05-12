@@ -54,7 +54,7 @@ $doc.ready(function() {
 		$max = 1 + $y / 5e3;
 		
 		$scale = Math.min(Math.max(parseFloat($max), 1), 2);
-		//$scale < 1.25 && $first.find("img").css("transform", "scale(" + $scale + ")");
+		$scale < 1.25 && $first.find("img").css("transform", "scale(" + $scale + ")");
 		
 		$max = 200 - $y / $winH * 50; 
 		
