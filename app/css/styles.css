@@ -261,7 +261,7 @@ a {
 
 .about-wrapper {
   position: absolute;
-  bottom: 130px;
+  bottom: 0;
   right: 50%;
   transform: translate(50%, 0);
   padding-top: 50px;
@@ -269,7 +269,7 @@ a {
   width: 100%;
   padding-left: 50px;
   padding-right: 50px;
-  padding: 50px 50px 100px;
+  padding: 50px 50px 230px;
   box-sizing: border-box; }
   @media (min-width: 1280px) {
     .about-wrapper {
