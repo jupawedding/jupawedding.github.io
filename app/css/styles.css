@@ -120,7 +120,7 @@ h2 {
       font-size: 1.5em; } }
 
 h3 {
-  font-size: .75em;
+  font-size: 1em;
   margin-top: 0;
   padding: 0; }
   h3:after {
@@ -135,13 +135,19 @@ h3 {
       font-size: 1em; } }
 
 h4 {
-  font-size: 0.75em;
+  font-size: 1em;
   margin-bottom: 0;
   padding: 0; }
+  @media (min-width: 1040px) {
+    h4 {
+      font-size: .75em; } }
 
 p {
-  font-size: 0.75em;
+  font-size: 1em;
   margin: 0; }
+  @media (min-width: 1040px) {
+    p {
+      font-size: .75em; } }
 
 li {
   font-size: 0.75em; }
@@ -195,7 +201,7 @@ a {
   position: absolute;
   width: 6vw;
   display: block;
-  top: 80vh;
+  top: 70vh;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transition: opacity 0.5s cubic-bezier(0.28, 0, 0.18, 1);
