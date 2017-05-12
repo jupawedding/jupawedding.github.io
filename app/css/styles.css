@@ -109,15 +109,18 @@ h1 {
 
 h2 {
   color: #222;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.15151515;
   font-family: 'Cormorant Garamond', serif;
   border-bottom: 2px solid #0c9fe3;
   padding-bottom: 0.45454545em;
   margin-top: 0; }
+  @media (min-width: 1040px) {
+    h2 {
+      font-size: 1.5em; } }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 0;
   padding: 0; }
   h3:after {
@@ -135,13 +138,13 @@ h4 {
   font-size: .75em;
   margin-bottom: 0;
   padding: 0; }
+  @media (min-width: 1040px) {
+    h4 {
+      font-size: .75em; } }
 
 p {
-  font-size: 1em;
+  font-size: .75em;
   margin: 0; }
-  @media (min-width: 1040px) {
-    p {
-      font-size: .75em; } }
 
 li {
   font-size: 0.75em; }
