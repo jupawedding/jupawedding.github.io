@@ -1,7 +1,10 @@
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+
+@keyframes spin {
+  100% {
+    transform: rotate(-4.5deg); } }
 
 html {
   font: 100%/1.72727273 "Cormorant Garamond", Times, Georgia, serif;
@@ -243,17 +246,30 @@ a {
   margin: 0 auto;
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%; }
-  .vinyl img {
-    width: 600px;
-    height: 600px;
-    transform-origin: 49%; }
+
+.vinyl-img {
+  width: 600px;
+  height: 600px;
+  transform-origin: 49%; }
 
 .animate {
   animation: spin 4s linear infinite; }
 
-canvas {
-  border-radius: 100%; }
+.vinyl-arm {
+  position: absolute;
+  top: 120px;
+  width: 200px;
+  right: 0;
+  height: 310px;
+  transform-origin: 200px 0px;
+  transform: rotate(-24.5deg); }
+
+.arm-animate {
+  animation: spin .5s linear forwards; }
 
 .youtube-wrapper {
   position: absolute;
   left: -300vw; }
+
+.play-btn {
+  margin-top: 60px; }
