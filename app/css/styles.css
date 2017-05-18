@@ -1,3 +1,8 @@
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 html {
   font: 100%/1.72727273 "Cormorant Garamond", Times, Georgia, serif;
   color: #222;
@@ -179,22 +184,24 @@ h3 {
   height: 250px; }
   .location span {
     display: block; }
-  .location a {
-    height: 50px;
-    width: 220px;
-    border: 1px solid #000;
-    display: block;
-    text-decoration: none;
-    margin: 0 auto;
-    color: #fff;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    background-color: #f7cccc;
-    box-shadow: 0 1px 0 #000, 0 -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000; }
-    .location a:hover {
-      background-repeat: repeat;
-      background-image: url(../images/pattern-dots-dense.svg);
-      background-size: 5px; }
+
+a {
+  height: 50px;
+  width: 220px;
+  border: 1px solid #000;
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  font-family: 'Candal', sans-serif;
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: #f7cccc;
+  box-shadow: 0 1px 0 #000, 0 -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000; }
+  a:hover {
+    background-repeat: repeat;
+    background-image: url(../images/pattern-dots-dense.svg);
+    background-size: 5px; }
 
 .introducing {
   font-family: 'Candal', sans-serif; }
@@ -213,3 +220,36 @@ h3 {
 
 .support {
   font-family: 'Candal', sans-serif; }
+
+.record {
+  display: none;
+  position: fixed;
+  top: 2px;
+  left: 660px;
+  right: 2px;
+  bottom: 2px;
+  max-width: none; }
+  @media (min-width: 768px) {
+    .record {
+      display: block; } }
+
+.vinyl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%; }
+  .vinyl img {
+    width: 600px;
+    height: 600px;
+    transform-origin: 49%; }
+
+.animate {
+  animation: spin 4s linear infinite; }
+
+canvas {
+  border-radius: 100%; }

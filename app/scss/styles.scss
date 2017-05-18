@@ -1,6 +1,8 @@
 $breakpoint-tablet: 768px;
 $breakpoint-large: 1680px;
 
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 html{
   font: 100%/1.72727273 "Cormorant Garamond", Times, Georgia, serif;
   color: #222;
@@ -222,14 +224,16 @@ h3{
     display: block;
   }
 
-  a{
+}
+
+a{
     height: 50px;
     width: 220px;
     border: 1px solid #000;
     display: block;
     text-decoration: none;
     margin: 0 auto;
-    
+    font-family: 'Candal', sans-serif;
     color: #fff;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -242,8 +246,6 @@ h3{
       background-size: 5px;
     }
   }
-
-}
 
 .introducing{
    font-family: 'Candal', sans-serif;
@@ -267,4 +269,48 @@ h3{
 
 .support{
    font-family: 'Candal', sans-serif;
+}
+
+.record{
+  display: none;
+  position: fixed;
+  top: 2px;
+  left: 660px;
+  right: 2px;
+  bottom: 2px;
+  max-width: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.vinyl{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+
+  img{
+    width: 600px;
+    height: 600px;
+    transform-origin: 49%;
+  }
+}
+
+.animate{
+  animation:spin 4s linear infinite;
+}
+
+.vinyl-wrapper{
+   
+}
+
+canvas{
+  border-radius: 100%;
 }
