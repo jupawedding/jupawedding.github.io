@@ -253,3 +253,8 @@ a {
 
 canvas {
   border-radius: 100%; }
+
+.youtube-wrapper {
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute; }
