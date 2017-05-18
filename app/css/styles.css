@@ -2,7 +2,7 @@
   100% {
     transform: rotate(360deg); } }
 
-@keyframes spin {
+@keyframes spin-arm {
   100% {
     transform: rotate(-4.5deg); } }
 
@@ -244,13 +244,15 @@ a {
   width: 600px;
   height: 600px;
   margin: 0 auto;
-  transform: translate(-50%, -50%);
-  transform-origin: 50% 50%; }
+  transform: translate(-50%, -50%); }
 
-.vinyl-img {
-  width: 600px;
-  height: 600px;
-  transform-origin: 49%; }
+.vinyl-image {
+  width: 520px;
+  height: 520px;
+  transform-origin: 49%;
+  background-repeat: no-repeat;
+  background-image: url(../images/big-vinyl.svg);
+  transform-origin: 50% 50%; }
 
 .animate {
   animation: spin 4s linear infinite; }
@@ -262,10 +264,12 @@ a {
   right: 0;
   height: 310px;
   transform-origin: 200px 0px;
-  transform: rotate(-24.5deg); }
+  transform: rotate(-24.5deg);
+  background-repeat: no-repeat;
+  background-image: url(../images/arm.svg); }
 
 .arm-animate {
-  animation: spin .5s linear forwards; }
+  animation: spin-arm .5s linear forwards; }
 
 .youtube-wrapper {
   position: absolute;
