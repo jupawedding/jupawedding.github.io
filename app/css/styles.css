@@ -72,7 +72,7 @@ body {
   height: calc(100vh - 4px); }
   @media (min-width: 768px) {
     .main {
-      padding-left: 75px; } }
+      padding-left: 60px; } }
 
 .main__inner {
   position: relative; }
@@ -83,9 +83,7 @@ body {
   overflow: auto;
   font-weight: 500;
   text-align: left;
-  border-right: 2px solid #000;
-  background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px; }
+  border-right: 2px solid #000; }
   @media (min-width: 768px) {
     .copy {
       width: 600px;
@@ -95,7 +93,9 @@ body {
   position: relative;
   border-bottom: 2px solid #000;
   height: 230px;
-  text-align: center; }
+  text-align: center;
+  background-image: url(../images/pattern-dots-dense.svg);
+  background-size: 5px; }
 
 h1 {
   margin: 0;
@@ -116,3 +116,100 @@ h3 {
   width: 100%;
   top: 50%;
   transform: translateY(-50%); }
+
+.section {
+  text-align: center;
+  overflow: visible;
+  margin: 0;
+  vertical-align: top;
+  border: 2px solid #000;
+  overflow: auto;
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+  display: block;
+  margin-top: -2px;
+  border-top: 2px solid #000;
+  padding: 15px 0; }
+  @media (min-width: 768px) {
+    .section {
+      width: 600px; } }
+
+.subline {
+  height: 50px;
+  width: 100%;
+  background-repeat: repeat;
+  font-family: 'Candal', sans-serif; }
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; }
+
+.husband-wife-wrapper {
+  height: 150px;
+  background-repeat: repeat;
+  background-image: url(../images/pattern-dots-dense.svg);
+  background-size: 5px; }
+  .husband-wife-wrapper .husband-wife-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  .husband-wife-wrapper h1 {
+    color: #fff;
+    display: block;
+    font-family: 'Fugaz One', cursive;
+    text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000; }
+  .husband-wife-wrapper span {
+    color: #fff;
+    font-size: 30px;
+    margin-top: -5px;
+    color: #f7cccc;
+    text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000; }
+  @media (min-width: 768px) {
+    .husband-wife-wrapper {
+      width: 600px; } }
+
+.location {
+  font-family: 'Candal', sans-serif;
+  height: 250px; }
+  .location span {
+    display: block; }
+  .location a {
+    height: 50px;
+    width: 220px;
+    border: 1px solid #000;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background-color: #f7cccc;
+    box-shadow: 0 1px 0 #000, 0 -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000; }
+    .location a:hover {
+      background-repeat: repeat;
+      background-image: url(../images/pattern-dots-dense.svg);
+      background-size: 5px; }
+
+.introducing {
+  font-family: 'Candal', sans-serif; }
+
+.theo {
+  background-repeat: repeat;
+  background-image: url(../images/pattern-dots-dense.svg);
+  background-size: 5px;
+  font-family: 'Ruslan Display', cursive;
+  color: #fff;
+  height: 150px;
+  text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+  font-size: 90px; }
+  .theo span {
+    color: #f7cccc; }
+
+.support {
+  font-family: 'Candal', sans-serif; }
