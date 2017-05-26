@@ -13,7 +13,8 @@ html {
   box-sizing: border-box;
   height: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow-x: none; }
 
 body {
   height: 100vh;
@@ -23,7 +24,8 @@ body {
   font-family: Rubik,OpenSans,Helvetica,sans-serif;
   -webkit-font-smoothing: antialiased;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 .sidebar {
   position: fixed;
@@ -183,8 +185,13 @@ h3 {
       width: 600px; } }
 
 .location {
+  background-repeat: repeat;
+  background-image: url(../images/pattern-dots-dense.svg);
+  background-size: 5px;
   font-family: 'Candal', sans-serif;
-  height: 250px; }
+  height: 250px;
+  color: #fff;
+  text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000; }
   .location span {
     display: block; }
 
@@ -314,3 +321,15 @@ a {
   color: #f7cccc;
   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
   position: relative; }
+
+.attire {
+  background-repeat: repeat;
+  background-image: url(../images/pattern-dots-dense.svg);
+  background-size: 5px;
+  font-family: 'Candal', sans-serif;
+  color: #fff;
+  text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000; }
+  .attire span {
+    display: block; }
+  .attire a {
+    margin-top: 20px; }
