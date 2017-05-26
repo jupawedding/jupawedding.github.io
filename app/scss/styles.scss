@@ -33,6 +33,7 @@ body {
   -webkit-font-smoothing: antialiased;
   padding: 0;
   margin: 0;
+  //background-color: #efefef;
 }
 
 .sidebar{
@@ -344,4 +345,55 @@ a{
 
 .play-btn{
   margin-top: 60px;
+}
+
+.families{
+  background-repeat: repeat;
+  background-image: url(../images/pattern-dots-dense.svg);
+  background-size: 5px;
+}
+
+.Gannons{
+ font-family: 'Megrim', cursive;
+  color: #fff;
+   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
+    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+    font-size: 90px;
+
+    span{
+       color: #f7cccc;
+    }
+}
+
+.mccreanors{
+  font-family: 'Iceland', cursive;
+
+  color: #fff;
+   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
+    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+    font-size: 120px;
+    position: relative;
+
+    span{
+      color: #f7cccc;
+      display: block;
+      position: absolute;
+      top: 7px;
+      left: 91px;
+      font-size: 42px;
+    }
+}
+
+.friends{
+  font-family: 'Monofett', cursive;
+  font-style: normal;
+    font-weight: 400;
+    line-height: 1.10909;
+    font-size: 40px;
+
+  color: #f7cccc;
+   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
+    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+
+    position: relative;
 }
