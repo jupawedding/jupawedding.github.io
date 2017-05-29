@@ -137,7 +137,7 @@ body {
   height: 230px;
   text-align: center;
   background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px;
+  background-size: 3px;
 }
 
 h1{
@@ -205,7 +205,7 @@ h3{
   height: 150px;
   background-repeat: repeat;
   background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px;
+  background-size: 3px;
   width: 100%;
 
 
@@ -222,8 +222,8 @@ h3{
     color: #fff;
     display: block;
     font-family: 'Fugaz One', cursive;
-    text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+    text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
   }
 
   span{
@@ -231,8 +231,8 @@ h3{
     font-size: 30px;
     margin-top: -5px;
     color: #f7cccc;
-    text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+    text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
   }
 
   @media (min-width: 1110px) {
@@ -243,12 +243,12 @@ h3{
 .location{
   background-repeat: repeat;
   background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px;
+  background-size: 3px;
   font-family: 'Candal', sans-serif;
   height: 250px;
   color: #fff;
-  text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+  text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
   span{
     display: block;
   }
@@ -256,6 +256,7 @@ h3{
 }
 
 a{
+    text-shadow: none;
     height: 50px;
     width: 220px;
     border: 1px solid #000;
@@ -272,7 +273,7 @@ a{
     &:hover{
       background-repeat: repeat;
       background-image: url(../images/pattern-dots-dense.svg);
-      background-size: 5px;
+      background-size: 3px;
     }
   }
 
@@ -283,12 +284,12 @@ a{
 .theo{
   background-repeat: repeat;
   background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px;
+  background-size: 3px;
   font-family: 'Ruslan Display', cursive;
   color: #fff;
   height: 150px;
-   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+   text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
     font-size: 90px;
 
     span{
@@ -384,14 +385,14 @@ a{
 .families{
   background-repeat: repeat;
   background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px;
+  background-size: 3px;
 }
 
 .Gannons{
  font-family: 'Megrim', cursive;
   color: #fff;
-   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+   text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
     font-size: 90px;
 
     span{
@@ -403,8 +404,8 @@ a{
   font-family: 'Iceland', cursive;
 
   color: #fff;
-   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+    text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
     font-size: 120px;
     position: relative;
 
@@ -432,8 +433,8 @@ a{
     font-size: 40px;
 
   color: #f7cccc;
-   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+    text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
 
     position: relative;
 }
@@ -441,27 +442,28 @@ a{
 .attire{
   background-repeat: repeat;
   background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px;
+  background-size: 3px;
   font-family: 'Candal', sans-serif;
   color: #fff;
-  text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+  text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
   span{
     display: block;
   }
   a{
     margin-top: 20px;
+    text-shadow: none;
   }
 }
 
 .lost{
    background-repeat: repeat;
   background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px;
+  background-size: 3px;
   color: #fff;
   font-family: 'Candal', sans-serif;
-   text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,
-    0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000;
+    text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000,  0 0 2px #000,  0 0 2px #000,
+    0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000,  0 0 2px #000;
   h1{
      color: #f7cccc;
   }
