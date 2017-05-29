@@ -38,8 +38,11 @@ body {
   border-top: 2px solid #000;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 2;
+  display: none; }
+  @media (min-width: 1110px) {
     .sidebar {
       right: auto;
       top: 2px;
@@ -47,13 +50,14 @@ body {
       height: auto;
       width: 60px;
       border-top: 0;
-      border-bottom: 0; } }
+      border-bottom: 0;
+      display: block; } }
 
 .sidebar__inner {
   width: 100%;
   margin: 0;
   text-align: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 1110px) {
     .sidebar__inner {
       position: absolute;
       top: 50%;
@@ -67,7 +71,7 @@ body {
     text-align: center;
     font-weight: 700;
     font-family: 'Monoton', cursive; }
-    @media (min-width: 768px) {
+    @media (min-width: 1110px) {
       .sidebar__inner span {
         width: 100%;
         display: block; } }
@@ -80,7 +84,7 @@ body {
   text-align: center;
   width: 100%;
   height: calc(100vh - 4px); }
-  @media (min-width: 768px) {
+  @media (min-width: 1110px) {
     .main {
       padding-left: 60px; } }
 
@@ -93,11 +97,14 @@ body {
   overflow: auto;
   font-weight: 500;
   text-align: left;
-  border-right: 2px solid #000; }
+  border-right: 2px solid #000;
+  width: 100%; }
   @media (min-width: 768px) {
     .copy {
-      width: 600px;
       padding-bottom: 0; } }
+  @media (min-width: 1110px) {
+    .copy {
+      width: 600px; } }
 
 .header {
   position: relative;
@@ -140,8 +147,9 @@ h3 {
   display: block;
   margin-top: -2px;
   border-top: 2px solid #000;
-  padding: 15px 0; }
-  @media (min-width: 768px) {
+  padding: 15px 0;
+  width: 100%; }
+  @media (min-width: 1110px) {
     .section {
       width: 600px; } }
 
@@ -162,7 +170,8 @@ h3 {
   height: 150px;
   background-repeat: repeat;
   background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 5px; }
+  background-size: 5px;
+  width: 100%; }
   .husband-wife-wrapper .husband-wife-inner {
     position: absolute;
     top: 50%;
@@ -180,7 +189,7 @@ h3 {
     margin-top: -5px;
     color: #f7cccc;
     text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000; }
-  @media (min-width: 768px) {
+  @media (min-width: 1110px) {
     .husband-wife-wrapper {
       width: 600px; } }
 
@@ -239,7 +248,7 @@ a {
   right: 2px;
   bottom: 2px;
   max-width: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 1110px) {
     .record {
       display: block; } }
 
@@ -248,32 +257,45 @@ a {
   top: 50%;
   left: 50%;
   display: block;
-  width: 600px;
-  height: 600px;
+  width: 410px;
+  height: 410px;
   margin: 0 auto;
   transform: translate(-50%, -50%); }
+  @media (min-width: 1300px) {
+    .vinyl {
+      width: 600px;
+      height: 600px; } }
 
 .vinyl-image {
-  width: 520px;
-  height: 520px;
+  width: 330px;
+  height: 330px;
   transform-origin: 49%;
   background-repeat: no-repeat;
   background-image: url(../images/big-vinyl.svg);
   transform-origin: 50% 50%; }
+  @media (min-width: 1300px) {
+    .vinyl-image {
+      width: 520px;
+      height: 520px; } }
 
 .animate {
   animation: spin 4s linear infinite; }
 
 .vinyl-arm {
   position: absolute;
-  top: 120px;
-  width: 200px;
-  right: 0;
+  top: 0;
+  width: 150px;
+  right: 20px;
   height: 310px;
   transform-origin: 200px 0px;
   transform: rotate(-24.5deg);
   background-repeat: no-repeat;
   background-image: url(../images/arm.svg); }
+  @media (min-width: 1300px) {
+    .vinyl-arm {
+      top: 90px;
+      width: 200px;
+      right: 0; } }
 
 .arm-animate {
   animation: spin-arm .5s linear forwards; }
@@ -333,3 +355,13 @@ a {
     display: block; }
   .attire a {
     margin-top: 20px; }
+
+.lost {
+  background-repeat: repeat;
+  background-image: url(../images/pattern-dots-dense.svg);
+  background-size: 5px;
+  color: #fff;
+  font-family: 'Candal', sans-serif;
+  text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000, 0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000,  0 0 4px #000; }
+  .lost h1 {
+    color: #f7cccc; }

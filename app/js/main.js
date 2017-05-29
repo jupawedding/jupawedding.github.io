@@ -1,6 +1,7 @@
 $('.play-btn').click(function(){
 	$('.vinyl-image').addClass('animate');
 	$('.vinyl-arm').addClass('arm-animate');
+  console.log('in');
 });
 
 

@@ -73,7 +73,7 @@
 				</div>
 				<div class="theo section">
 					<div class="inner">
-						<h1>Theo<span>!</span></h1>
+						<h1 class="responsive_headline">Theo<span>!</span></h1>
 					</div>
 				</div>
 				<div class="support section">
@@ -81,10 +81,10 @@
 				</div>
 				<div class="families section">
 					<div class="Gannons">
-						<h1>G<span>a</span>nnons</h1>
+						<h1 class="responsive_headline">G<span>a</span>nnons</h1>
 					</div>
 					<div class="mccreanors">
-						<h1 class="mccreanors"><span>The </span>McCreanors</h1>
+						<h1 class="mccreanors responsive_headline"><span>The </span>McCreanors</h1>
 					</div>
 					<div class="Friends">
 						<h1>Friends</h1>
@@ -97,6 +97,14 @@
 					<span>Summertime fly.</span> 
 					<span>No heels please (only wedges) - the cottage has fancy floors!</span>
 					<a href="https://www.pinterest.com/judith_gannon/what-the-hell-am-i-going-to-wear-to-jupas-wedding/?lp=true" target="_blank">IDEAS</a>
+				</div>
+				<div class="subline section">
+					<span class="">Lost or Missing?</span>
+				</div>
+				<div class="lost section">
+					<span>Call our co-ordinator</span>
+					<h1>905.808.1547</h1>
+					<span>(Just leave us alone. We're drinking.)
 				</div>
 			</div>
 			<div class="record">
@@ -125,12 +133,14 @@
   			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   			crossorigin="anonymous">
   		</script>
+  		<script src="js/lib/iscroll.js"></script>
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 		<!--<script src="js/lib/iscroll.js"></script>
 		<script src="js/lib/iscroll-probe.js"></script>-->
+		<script src="js/lib/jquery.fittext.js"></script>
 		<script src="js/main.js"></script>
 	<!-- endbuild -->
 	<script type="text/javascript">
- 		
+ 		jQuery(".responsive_headline").fitText(.5);
 	</script>
 </body>
