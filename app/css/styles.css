@@ -330,9 +330,14 @@ a {
     color: #f7cccc;
     display: block;
     position: absolute;
-    top: 7px;
-    left: 91px;
-    font-size: 42px; }
+    top: 21px;
+    left: 159px;
+    font-size: 62px; }
+    @media (min-width: 1300px) {
+      .mccreanors span {
+        top: 7px;
+        left: 91px;
+        font-size: 42px; } }
 
 .friends {
   font-family: 'Monofett', cursive;
