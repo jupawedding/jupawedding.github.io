@@ -118,7 +118,6 @@ body {
 }
 
 .copy{
-  padding: 0 0 100px;
   color: #000;
   overflow: auto;
   font-weight: 500;
@@ -305,29 +304,37 @@ a{
 }
 
 .record{
-  display: none;
-  position: fixed;
-  top: 2px;
-  left: 660px;
-  right: 2px;
-  bottom: 2px;
+  display: block;
+  position: relative;
   max-width: none;
+ height: 400px;
 
   @media (min-width: 1110px) {
-    display: block;
+    position: fixed;
+    top: 2px;
+    left: 660px;
+    right: 2px;
+    bottom: 2px;
+    height: 100%;
   }
 }
 
 .vinyl{
   position: absolute;
+  display: block;
+  margin: 0 auto;
   top: 50%;
   left: 50%;
-  display: block;
-   width: 410px;
-    height: 410px;
-  margin: 0 auto;
   transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
 
+  @media (min-width: 1110px) {
+      width: 410px;
+      height: 410px;
+
+  }
+  
   @media (min-width: 1300px) {
     width: 600px;
     height: 600px;
@@ -336,12 +343,17 @@ a{
 }
 
 .vinyl-image{
-  width: 330px;
-  height: 330px;
+  width: 240px;
+  height: 240px;
   transform-origin: 49%;
   background-repeat: no-repeat;
   background-image: url(../images/big-vinyl.svg);
   transform-origin: 50% 50%;
+
+   @media (min-width: 1110px) {
+      width: 330px;
+      height: 330px;
+   }
 
   @media (min-width: 1300px) {
     width: 520px;
@@ -356,13 +368,22 @@ a{
 .vinyl-arm{
   position: absolute;
    top: 0;
-    width: 150px;
-    right: 20px;
-  height: 310px;
+    
   transform-origin: 200px 0px;
   transform: rotate(-24.5deg);
   background-repeat: no-repeat;
   background-image: url(../images/arm.svg);
+
+
+  width: 110px;
+    right: 59px;
+    height: 270px;
+
+    @media (min-width: 1110px) {
+      width: 150px;
+      right: 20px;
+      height: 310px;
+    }
 
   @media (min-width: 1300px) {
     top: 90px;
