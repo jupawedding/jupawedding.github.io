@@ -108,19 +108,18 @@ body {
     .copy {
       width: 600px; } }
 
+.background {
+  background-image: url(../images/pattern-dots-dense.svg);
+  background-size: 3px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 2000px), only screen and (min-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (min-resolution: 192dpi) and (max-width: 2000px), only screen and (min-resolution: 2dppx) and (max-width: 2000px) {
+    .background {
+      background-size: 1px; } }
+
 .header {
   position: relative;
   border-bottom: 2px solid #000;
   height: 230px;
-  text-align: center;
-  background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 3px; }
-  @media (min-width: 1110px) {
-    .header {
-      background-image: url(../images/pattern-dots-dense.svg); } }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 2000px), only screen and (min-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (min-resolution: 192dpi) and (max-width: 2000px), only screen and (min-resolution: 2dppx) and (max-width: 2000px) {
-    .header {
-      background-size: 1px; } }
+  text-align: center; }
 
 h1 {
   margin: 0;
