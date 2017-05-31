@@ -140,8 +140,13 @@ body {
   border-bottom: 2px solid #000;
   height: 230px;
   text-align: center;
-  background-image: url(../images/pattern-dots-dense.svg);
+  background-image: url(../images/pattern-dots-dense-mobile.svg);
   background-size: 3px;
+
+  @media (min-width: 1110px) {
+     background-image: url(../images/pattern-dots-dense.svg);
+  }
+
 }
 
 h1{
