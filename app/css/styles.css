@@ -113,7 +113,8 @@ body {
   background-size: 3px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 2000px), only screen and (min-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (min-resolution: 192dpi) and (max-width: 2000px), only screen and (min-resolution: 2dppx) and (max-width: 2000px) {
     .background {
-      background-size: 1px; } }
+      background-color: #7F7F7F;
+      background-image: none; } }
 
 .header {
   position: relative;
@@ -175,9 +176,6 @@ h3 {
 
 .husband-wife-wrapper {
   height: 150px;
-  background-repeat: repeat;
-  background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 3px;
   width: 100%; }
   .husband-wife-wrapper .husband-wife-inner {
     position: absolute;
@@ -199,9 +197,6 @@ h3 {
       width: 600px; } }
 
 .location {
-  background-repeat: repeat;
-  background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 3px;
   font-family: 'Candal', sans-serif;
   height: 250px;
   color: #fff; }
@@ -233,9 +228,6 @@ a {
   font-family: 'Candal', sans-serif; }
 
 .theo {
-  background-repeat: repeat;
-  background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 3px;
   font-family: 'Ruslan Display', cursive;
   color: #fff;
   height: 150px;
@@ -328,11 +320,6 @@ a {
 .play-btn {
   margin-top: 60px; }
 
-.families {
-  background-repeat: repeat;
-  background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 3px; }
-
 .Gannons {
   font-family: 'Megrim', cursive;
   color: #fff;
@@ -368,9 +355,6 @@ a {
   position: relative; }
 
 .attire {
-  background-repeat: repeat;
-  background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 3px;
   font-family: 'Candal', sans-serif;
   color: #fff; }
   .attire span {
@@ -380,9 +364,6 @@ a {
     text-shadow: none; }
 
 .lost {
-  background-repeat: repeat;
-  background-image: url(../images/pattern-dots-dense.svg);
-  background-size: 3px;
   color: #fff;
   font-family: 'Candal', sans-serif; }
   .lost h1 {
