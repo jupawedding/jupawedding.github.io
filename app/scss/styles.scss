@@ -453,11 +453,12 @@ a{
       left: 159px;
       font-size: 62px;
 
-     @media (min-width: 1300px)  {
-      top: 7px;
-      left: 91px;
-      font-size: 42px;
-      }
+
+       @media (min-width: 1110px)  {
+         top: 7px;
+        left: 91px;
+        font-size: 42px;
+       }
     }
 }
 
