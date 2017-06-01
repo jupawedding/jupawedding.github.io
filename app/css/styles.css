@@ -323,7 +323,8 @@ a {
   left: -300vw; }
 
 .play-btn {
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-bottom: 5px; }
 
 .Gannons {
   font-family: 'Megrim', cursive;
