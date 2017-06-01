@@ -264,12 +264,12 @@ a {
   transform: translate(-50%, -50%);
   width: 320px;
   height: 320px;
-  padding-bottom: 50px; }
+  padding: 50px 0; }
   @media (min-width: 1110px) {
     .vinyl {
       width: 410px;
       height: 410px;
-      padding-bottom: 0; } }
+      padding: 0; } }
   @media (min-width: 1300px) {
     .vinyl {
       width: 600px;
