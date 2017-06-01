@@ -4,6 +4,12 @@ $('.play-btn').click(function(){
   console.log('in');
 });
 
+$('.pause-btn').click(function(){
+  $('.vinyl-image').removeClass('animate');
+  $('.vinyl-arm').removeClass('arm-animate');
+  console.log('in');
+});
+
 
 // https://developers.google.com/youtube/iframe_api_reference
 
@@ -30,7 +36,7 @@ function onPlayerReady(event) {
   });
 
    var pauseButton = document.getElementById("pause-btn");
-  pauseButton.addEventListener("click", function() {
+      pauseButton.addEventListener("click", function() {
     player.pauseVideo();
   });
 }
