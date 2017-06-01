@@ -28,6 +28,11 @@ function onPlayerReady(event) {
   playButton.addEventListener("click", function() {
     player.playVideo();
   });
+
+   var pauseButton = document.getElementById("pause-btn");
+  pauseButton.addEventListener("click", function() {
+    player.pauseVideo();
+  });
 }
 
 // Inject YouTube API script
